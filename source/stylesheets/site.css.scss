@@ -10,6 +10,9 @@ h1 {
 h2 {
   font-size: 1.1rem;
 }
+a:hover{
+  text-decoration: none !important;
+}
 @media (min-width: 350px) {
   html {
     font-size: .8rem !important;
@@ -19,6 +22,9 @@ h2 {
   }
   h2 {
       font-size: 1rem ;
+  }
+  .footer{
+        bottom: -325px;
   }
 }
 @media (min-width: 768px) {
@@ -79,12 +85,12 @@ font-family: 'Montserrat', sans-serif;
 }
 .tabs-underlined .tab-underlined {
   color: #323330;
-  padding: 8px;
-  margin: 8px 16px;
+  padding: 8px ;
+  // margin: 8px 16px;
   opacity: .9;
   cursor: pointer;
   text-decoration: none;
-  border-bottom: 4px solid transparent;
+  // border-bottom: 4px solid transparent;
 
 }
 .list{
@@ -145,7 +151,7 @@ border-radius: 4px;
 /*card*/
 .card-product {
       // width: 80%;
-    margin: 0 auto;
+
   overflow: hidden;
   height: 220px;
   background: white;
@@ -309,6 +315,9 @@ box-sizing: content-box;
     align-self: center;
         margin: 15px auto -20px;
 }
+#mycard{
+  margin: 0 auto;
+}
 .main-links {
   display: flex;
   align-items: center;
@@ -344,7 +353,8 @@ box-sizing: content-box;
      /* z-index: 100;*/
    /* margin-top: 100px;*/
   position: relative;
-   bottom: 0;
+       bottom: 0;
+           margin-top: 220px;
 
 }
 .footer-links {
@@ -449,8 +459,9 @@ box-sizing: content-box;
 // ABOUT PAGE STARTS HERE >>>
 
 .about-div{
-  height: 80vh;
-  margin: 70px 0;
+  height: 100vh;
+  margin: 70px 0 0 0;
+  // overflow: scroll;
   }
 
 .about-text{
@@ -468,6 +479,35 @@ box-sizing: content-box;
 .about-text p {
   font-size: 20px;
   color: #4c5053;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+.works-container{
+  height: 65vh;
+
+  margin: 0 auto;
+}
+.works-box{
+  padding: 50px 10px;
+}
+.works-banner {
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+}
+
+.works-banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.works-banner p {
+  font-size: 20px;
+  color: white;
   opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }

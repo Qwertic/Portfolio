@@ -15,18 +15,21 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <div class="navbar row">
   <div class="nav-links col-12">
     <ul class="list-inline tabs-underlined col-12">
       <li class="col-lg-1  col-sm-4 list listA">
-        <%= link_to "Home", "/index.html", :anchor => "home", class: "tab-underlined active" %>
+        <%= link_to "Home", "/index.html", :anchor => "ban", class: "tab-underlined  hvr-bob" %>
       </li>
       <li class="col-lg-1  col-sm-4 list listA">
-        <%= link_to "About", "/index.html",:anchor => "about", class: "tab-underlined" %>
+        <%= link_to "About", "/index.html",:anchor => "about", class: "tab-underlined hvr-bob" %>
       </li>
-
+      <li class="col-lg-1  col-sm-4 list listA">
+        <%= link_to "Works", "/works.html", class: "tab-underlined hvr-bob" %>
+      </li>
     </ul>
   </div>
 </div>
@@ -41,7 +44,7 @@
         <a target="_blank" href="https://www.linkedin.com/in/regi-voda-580a05169"><i class="fab fa-linkedin"></i></a>
       </div>
       <div class="footer-copyright">
-        This footer is made with <i class="fas fa-heart"></i> at Le Wagon
+        This page is made with <i class="fas fa-heart"></i> by Regi Voda
       </div>
     </div>
     <!-- FOOTER end -->
@@ -49,4 +52,8 @@
 
 
   </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+</script>
 </html>
