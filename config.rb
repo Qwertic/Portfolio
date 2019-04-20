@@ -7,6 +7,14 @@ end
 
 # Layouts
 # https://middlemanapp.com/basics/layouts/
+activate :deploy do |deploy|
+  deploy.method = :git
+  deploy.branch = 'master'
+  deploy.build_before = true
+end
+
+activate :relative_assets
+set :relative_links, true
 
 # Per-page layout changes
 page '/*.xml', layout: false
